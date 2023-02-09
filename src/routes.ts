@@ -1,8 +1,10 @@
 import { Router } from "express";
-import UsersController from "./controllers/UserController";
+import UserController from "./controllers/UserController";
+import ProductController from "./controllers/ProductController";
 
 const routes = Router();
 
-routes.get("/users", UsersController.getUsers);
+routes.get("/users", UserController.getUsers);
+routes.get("/products", ProductController.getProducts);
 
 export default routes;
